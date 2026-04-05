@@ -1,0 +1,77 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="w2"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3"/></filter>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#c8a0e0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#dff0e7" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <!-- Warm dusk sky -->
+  <rect width="400" height="300" fill="#fdf8f2"/>
+  <rect width="400" height="300" fill="url(#dusk)"/>
+  <!-- Foliage bg -->
+  <ellipse cx="200" cy="60" rx="220" ry="70" fill="#5a8a6a" opacity="0.2" filter="url(#w2)"/>
+  <!-- Tree trunk -->
+  <rect x="174" y="180" width="52" height="130" rx="8" fill="#b88c50" opacity="0.9"/>
+  <!-- Treehouse -->
+  <rect x="90" y="110" width="220" height="78" rx="4" fill="#d4a860" opacity="0.92"/>
+  <!-- Roof -->
+  <polygon points="75,114 200,72 325,114" fill="#8a5aaa" opacity="0.85"/>
+  <!-- Platform -->
+  <rect x="70" y="185" width="260" height="14" rx="5" fill="#b88c50" opacity="0.9"/>
+  <!-- Window -->
+  <rect x="110" y="128" width="55" height="45" rx="4" fill="#ede0f7" opacity="0.85"/>
+  <line x1="137" y1="128" x2="137" y2="173" stroke="#c4a0e0" stroke-width="1.5"/>
+  <line x1="110" y1="151" x2="165" y2="151" stroke="#c4a0e0" stroke-width="1.5"/>
+  <!-- Maya at window waving -->
+  <circle cx="137" cy="137" r="8" fill="#c4a0e0" opacity="0.8"/>
+  <line x1="137" y1="145" x2="137" y2="165" stroke="#c4a0e0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="137" y1="152" x2="150" y2="145" stroke="#c4a0e0" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Door ajar -->
+  <rect x="177" y="143" width="46" height="42" rx="3" fill="#b88c50" opacity="0.85"/>
+  <circle cx="215" cy="164" r="3" fill="#8a6030"/>
+  <!-- Aliens below looking up -->
+  <!-- Zib -->
+  <g transform="translate(240, 218)">
+    <ellipse cx="0" cy="20" rx="16" ry="20" fill="#8a5aaa" opacity="0.9"/>
+    <circle cx="0" cy="0"  r="17" fill="#a070cc"/>
+    <circle cx="-6" cy="-1" r="4.5" fill="#ede0f7"/>
+    <circle cx="6"  cy="-1" r="4.5" fill="#ede0f7"/>
+    <circle cx="-6" cy="-1" r="2"   fill="#3a2d4a"/>
+    <circle cx="6"  cy="-1" r="2"   fill="#3a2d4a"/>
+    <line x1="-4" y1="-15" x2="-5" y2="-23" stroke="#8a5aaa" stroke-width="2" stroke-linecap="round"/>
+    <line x1="4"  y1="-15" x2="5"  y2="-23" stroke="#8a5aaa" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="-5" cy="-24" r="3" fill="#c4a0e0"/>
+    <circle cx="5"  cy="-24" r="3" fill="#c4a0e0"/>
+  </g>
+  <!-- Mara -->
+  <g transform="translate(285, 225)">
+    <ellipse cx="0" cy="17" rx="14" ry="18" fill="#5a8a6a" opacity="0.9"/>
+    <circle cx="0" cy="0"  r="15" fill="#70aa80"/>
+    <ellipse cx="-5" cy="0" rx="4" ry="5" fill="#ede0f7"/>
+    <ellipse cx="5"  cy="0" rx="4" ry="5" fill="#ede0f7"/>
+    <circle cx="-5" cy="1" r="2" fill="#3a2d4a"/>
+    <circle cx="5"  cy="1" r="2" fill="#3a2d4a"/>
+    <path d="M-4 8 Q0 12 4 8" stroke="#3a2d4a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="0" cy="-11" rx="10" ry="5" fill="#5a8a6a" opacity="0.7"/>
+  </g>
+  <!-- Pip -->
+  <g transform="translate(218, 232)">
+    <ellipse cx="0" cy="13" rx="10" ry="13" fill="#c4a0e0" opacity="0.9"/>
+    <circle cx="0" cy="0"  r="12" fill="#d8b8f0"/>
+    <circle cx="-4" cy="-1" r="3.5" fill="#ede0f7"/>
+    <circle cx="4"  cy="-1" r="3.5" fill="#ede0f7"/>
+    <circle cx="-4" cy="-1" r="1.5" fill="#3a2d4a"/>
+    <circle cx="4"  cy="-1" r="1.5" fill="#3a2d4a"/>
+    <line x1="0" y1="-10" x2="0" y2="-17" stroke="#c4a0e0" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="0" cy="-18" r="2" fill="#8a5aaa"/>
+  </g>
+  <!-- Wonder stars -->
+  <circle cx="195" cy="115" r="2.5" fill="#c4a0e0" opacity="0.7"/>
+  <circle cx="380" cy="80"  r="2" fill="#c4a0e0" opacity="0.6"/>
+  <!-- Ground -->
+  <ellipse cx="200" cy="295" rx="250" ry="30" fill="#a0c4b0" opacity="0.2" filter="url(#w2)"/>
+  <!-- Label -->
+  <rect x="0" y="265" width="400" height="35" fill="#8a5aaa" opacity="0.12"/>
+  <text x="200" y="287" text-anchor="middle" font-size="13" fill="#6b5a7e" font-family="Georgia,serif" font-style="italic">02 — The Treehouse</text>
+</svg>

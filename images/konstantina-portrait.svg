@@ -1,0 +1,91 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="wp">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="bgport" cx="50%" cy="40%" r="60%">
+      <stop offset="0%"   stop-color="#ede0f7"/>
+      <stop offset="100%" stop-color="#dff0e7"/>
+    </radialGradient>
+    <radialGradient id="skingrad" cx="45%" cy="38%" r="55%">
+      <stop offset="0%"   stop-color="#f5d5b8"/>
+      <stop offset="100%" stop-color="#d4a888"/>
+    </radialGradient>
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="195"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background wash -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgport)"/>
+  <ellipse cx="160" cy="130" rx="120" ry="90" fill="#c4a0e0" opacity="0.2" filter="url(#wp)"/>
+  <ellipse cx="260" cy="300" rx="100" ry="80" fill="#a0c4b0" opacity="0.18" filter="url(#wp)"/>
+
+  <!-- Scattered paint dots (watercolour feel) -->
+  <circle cx="55"  cy="80"  r="18" fill="#8a5aaa" opacity="0.1" filter="url(#wp)"/>
+  <circle cx="340" cy="120" r="22" fill="#5a8a6a" opacity="0.1" filter="url(#wp)"/>
+  <circle cx="320" cy="340" r="15" fill="#8a5aaa" opacity="0.08" filter="url(#wp)"/>
+  <circle cx="80"  cy="330" r="20" fill="#5a8a6a" opacity="0.1"  filter="url(#wp)"/>
+
+  <!-- Body / shoulders -->
+  <ellipse cx="200" cy="370" rx="110" ry="70" fill="#8a5aaa" opacity="0.75" filter="url(#wp)"/>
+
+  <!-- Neck -->
+  <rect x="180" y="292" width="40" height="40" rx="10" fill="url(#skingrad)" opacity="0.9"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="250" rx="90" ry="100" fill="url(#skingrad)" opacity="0.95" filter="url(#wp)"/>
+
+  <!-- Hair — loose waves, dark with purple tint -->
+  <ellipse cx="200" cy="165" rx="95" ry="48" fill="#4a2860" opacity="0.88" filter="url(#wp)"/>
+  <!-- Side strands -->
+  <path d="M115 240 Q90 290 105 340" fill="none" stroke="#4a2860" stroke-width="22" stroke-linecap="round" opacity="0.7" filter="url(#wp)"/>
+  <path d="M285 240 Q310 290 295 338" fill="none" stroke="#4a2860" stroke-width="20" stroke-linecap="round" opacity="0.7" filter="url(#wp)"/>
+  <path d="M200 162 Q240 148 270 175" fill="none" stroke="#5a3278" stroke-width="14" stroke-linecap="round" opacity="0.5"/>
+  <!-- Hair highlight -->
+  <ellipse cx="175" cy="178" rx="28" ry="12" fill="#7a4898" opacity="0.3" transform="rotate(-10 175 178)" filter="url(#wp)"/>
+
+  <!-- Eyes -->
+  <ellipse cx="170" cy="250" rx="14" ry="12" fill="#fdf8f2" opacity="0.9"/>
+  <ellipse cx="230" cy="250" rx="14" ry="12" fill="#fdf8f2" opacity="0.9"/>
+  <circle cx="172" cy="251" r="8"  fill="#5a3870"/>
+  <circle cx="232" cy="251" r="8"  fill="#5a3870"/>
+  <circle cx="172" cy="251" r="4.5" fill="#3a2040"/>
+  <circle cx="232" cy="251" r="4.5" fill="#3a2040"/>
+  <!-- Eye highlights -->
+  <circle cx="176" cy="247" r="2.5" fill="white" opacity="0.85"/>
+  <circle cx="236" cy="247" r="2.5" fill="white" opacity="0.85"/>
+  <!-- Lashes (simple) -->
+  <path d="M157 243 Q158 237 164 241" fill="none" stroke="#3a2040" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M184 243 Q186 237 181 241" fill="none" stroke="#3a2040" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M196 268 Q200 278 204 268" fill="none" stroke="#c4947a" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Smile -->
+  <path d="M180 288 Q200 302 220 288" fill="none" stroke="#c4947a" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Eyebrows -->
+  <path d="M156 237 Q170 229 183 234" fill="none" stroke="#4a2860" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M218 234 Q231 229 245 237" fill="none" stroke="#4a2860" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Earrings (small stars / moons) -->
+  <text x="105" y="262" font-size="16" opacity="0.7">✦</text>
+  <text x="277" y="262" font-size="16" opacity="0.7">✦</text>
+
+  <!-- Paintbrush held up (illustrator detail) -->
+  <line x1="310" y1="180" x2="350" y2="100" stroke="#b88c50" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <ellipse cx="352" cy="97" rx="10" ry="5" fill="#b084d8" opacity="0.8" transform="rotate(-40 352 97)"/>
+  <!-- Paint dot -->
+  <circle cx="355" cy="91" r="5" fill="#8a5aaa" opacity="0.6" filter="url(#wp)"/>
+
+  <!-- Small floating star doodles -->
+  <circle cx="70"  cy="200" r="4" fill="#c4a0e0" opacity="0.5" filter="url(#wp)"/>
+  <circle cx="340" cy="260" r="3" fill="#a0c4b0" opacity="0.5" filter="url(#wp)"/>
+  <circle cx="90"  cy="140" r="3" fill="#8a5aaa" opacity="0.4"/>
+  <circle cx="350" cy="190" r="2.5" fill="#5a8a6a" opacity="0.4"/>
+
+  <!-- Caption -->
+  <text x="200" y="388" text-anchor="middle" font-size="12" fill="#6b5a7e" font-family="Georgia,serif" font-style="italic" opacity="0.7">Portrait placeholder</text>
+</svg>

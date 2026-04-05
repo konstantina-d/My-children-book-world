@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konstantina — Lost Among Stars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ─── Fixed Navigation ─────────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">Konstantina</a>
+      <ul class="nav__links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#chapters">Chapters</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav__cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ─────────────────────────────────────────────────────────────── -->
+  <section id="hero" class="hero">
+
+    <!-- Parallax background blobs (slowest layer) -->
+    <div class="parallax-bg" data-parallax="0.25">
+      <div class="blob blob--purple blob--1"></div>
+      <div class="blob blob--green  blob--2"></div>
+      <div class="blob blob--pale   blob--3"></div>
+      <div class="blob blob--green  blob--4"></div>
+    </div>
+
+    <!-- Stars layer (medium speed) -->
+    <div class="parallax-bg stars-layer" data-parallax="0.45">
+      <span class="star star--s" style="top:12%;left:8%"></span>
+      <span class="star star--m" style="top:22%;left:18%"></span>
+      <span class="star star--s" style="top:8%;left:55%"></span>
+      <span class="star star--l" style="top:18%;left:72%"></span>
+      <span class="star star--s" style="top:35%;left:88%"></span>
+      <span class="star star--m" style="top:60%;left:92%"></span>
+      <span class="star star--s" style="top:70%;left:5%"></span>
+      <span class="star star--l" style="top:78%;left:25%"></span>
+      <span class="star star--s" style="top:85%;left:60%"></span>
+      <span class="star star--m" style="top:42%;left:3%"></span>
+      <span class="star star--s" style="top:50%;left:48%"></span>
+      <span class="star star--s" style="top:30%;left:38%"></span>
+    </div>
+
+    <!-- Hero content (normal scroll) -->
+    <div class="hero__inner">
+
+      <!-- Floating planet SVG -->
+      <div class="hero__planet" aria-hidden="true">
+        <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" class="planet-svg">
+          <defs>
+            <radialGradient id="pg" cx="38%" cy="33%" r="65%">
+              <stop offset="0%"   stop-color="#ede0f7"/>
+              <stop offset="55%"  stop-color="#b084d8"/>
+              <stop offset="100%" stop-color="#7040a0"/>
+            </radialGradient>
+            <radialGradient id="cg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#9060b8" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#9060b8" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="blur3">
+              <feGaussianBlur stdDeviation="3"/>
+            </filter>
+            <filter id="blur6">
+              <feGaussianBlur stdDeviation="6"/>
+            </filter>
+          </defs>
+          <!-- Ring shadow -->
+          <ellipse cx="180" cy="205" rx="158" ry="26" fill="#7040a0" opacity="0.18" filter="url(#blur6)"/>
+          <!-- Planet body -->
+          <circle cx="180" cy="175" r="108" fill="url(#pg)"/>
+          <!-- Surface texture blobs -->
+          <circle cx="145" cy="148" r="22" fill="url(#cg)" filter="url(#blur3)"/>
+          <circle cx="200" cy="195" r="16" fill="url(#cg)" filter="url(#blur3)"/>
+          <circle cx="160" cy="200" r="12" fill="url(#cg)" filter="url(#blur3)"/>
+          <!-- Highlight -->
+          <ellipse cx="143" cy="138" rx="38" ry="24" fill="white" opacity="0.22" transform="rotate(-25 143 138)"/>
+          <ellipse cx="152" cy="133" rx="16" ry="10" fill="white" opacity="0.18" transform="rotate(-25 152 133)"/>
+          <!-- Ring back -->
+          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#c4a0e0" stroke-width="18" opacity="0.35"/>
+          <!-- Planet front clip (rings go behind) -->
+          <circle cx="180" cy="175" r="108" fill="url(#pg)"/>
+          <!-- Surface details redrawn on top -->
+          <ellipse cx="143" cy="138" rx="38" ry="24" fill="white" opacity="0.18" transform="rotate(-25 143 138)"/>
+          <!-- Ring front -->
+          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#8a5aaa" stroke-width="10" opacity="0.55"/>
+          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#ede0f7" stroke-width="3" opacity="0.3"/>
+          <!-- Small moons -->
+          <circle cx="60" cy="90" r="14" fill="#a0c4b0" opacity="0.85"/>
+          <ellipse cx="60" cy="85" rx="8" ry="5" fill="white" opacity="0.2" transform="rotate(-20 60 85)"/>
+          <circle cx="310" cy="250" r="9" fill="#c4a0e0" opacity="0.8"/>
+        </svg>
+      </div>
+
+      <!-- Decorative tiny aliens -->
+      <div class="hero__floaters" aria-hidden="true">
+        <div class="floater floater--zib">
+          <svg viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="30" cy="45" rx="18" ry="24" fill="#8a5aaa" opacity="0.9"/>
+            <circle cx="30" cy="22" r="16" fill="#a070cc"/>
+            <circle cx="23" cy="20" r="4" fill="#ede0f7"/>
+            <circle cx="37" cy="20" r="4" fill="#ede0f7"/>
+            <circle cx="23" cy="20" r="2" fill="#3a2d4a"/>
+            <circle cx="37" cy="20" r="2" fill="#3a2d4a"/>
+            <line x1="22" y1="9" x2="20" y2="3" stroke="#8a5aaa" stroke-width="2" stroke-linecap="round"/>
+            <line x1="38" y1="9" x2="40" y2="3" stroke="#8a5aaa" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="3" r="2.5" fill="#c4a0e0"/>
+            <circle cx="40" cy="3" r="2.5" fill="#c4a0e0"/>
+          </svg>
+        </div>
+        <div class="floater floater--mara">
+          <svg viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="30" cy="48" rx="16" ry="20" fill="#5a8a6a" opacity="0.9"/>
+            <circle cx="30" cy="24" r="17" fill="#70aa80"/>
+            <ellipse cx="22" cy="22" r="5" rx="4" ry="5" fill="#ede0f7"/>
+            <ellipse cx="38" cy="22" r="5" rx="4" ry="5" fill="#ede0f7"/>
+            <circle cx="22" cy="23" r="2.5" fill="#3a2d4a"/>
+            <circle cx="38" cy="23" r="2.5" fill="#3a2d4a"/>
+            <path d="M25 32 Q30 36 35 32" stroke="#3a2d4a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="30" cy="10" rx="12" ry="6" fill="#5a8a6a" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="floater floater--pip">
+          <svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="24" cy="38" rx="13" ry="16" fill="#c4a0e0" opacity="0.9"/>
+            <circle cx="24" cy="20" r="14" fill="#d8b8f0"/>
+            <circle cx="18" cy="18" r="3.5" fill="#ede0f7"/>
+            <circle cx="30" cy="18" r="3.5" fill="#ede0f7"/>
+            <circle cx="18" cy="18" r="2" fill="#3a2d4a"/>
+            <circle cx="30" cy="18" r="2" fill="#3a2d4a"/>
+            <line x1="24" y1="7" x2="24" y2="2" stroke="#c4a0e0" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="1.5" r="2" fill="#8a5aaa"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Text block -->
+      <div class="hero__text">
+        <span class="hero__eyebrow">A Picture Book by</span>
+        <h1 class="hero__title">Lost Among<br><em>Stars</em></h1>
+        <p class="hero__tagline">Three alien friends crash-land on Earth, discover a girl in a treehouse, and find their way home through friendship — and a little self-connection.</p>
+        <a href="#story" class="btn btn--primary">Explore the Story</a>
+      </div>
+
+    </div><!-- /hero__inner -->
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll to explore</span>
+      <div class="scroll-cue__arrow"></div>
+    </div>
+
+  </section><!-- /hero -->
+
+  <!-- ─── Story Section ─────────────────────────────────────────────────────── -->
+  <section id="story" class="section story-section">
+    <div class="parallax-bg section-blob section-blob--story" data-parallax="0.3" aria-hidden="true"></div>
+    <div class="container">
+      <div class="two-col two-col--text-left">
+
+        <div class="two-col__text">
+          <span class="section-label">The Story</span>
+          <h2>A Long Way<br>From Home</h2>
+          <p class="lead">Three young aliens — Zib, Mara, and Pip — were just trying to take a shortcut through the Milky Way when their ship hit an unexpected asteroid shower.</p>
+          <p>They crash-land in the backyard of Maya, a curious girl who spends her days in a treehouse full of maps, books, and half-finished inventions. She has never met an alien before. Then again, she has never had a real friend before either.</p>
+          <p>Together, they will have to navigate the strangest planet in the galaxy — Earth — and figure out how to get the little ship back to the stars.</p>
+        </div>
+
+        <div class="two-col__illustration">
+          <div class="illus-frame illus-frame--tilt-right">
+            <img src="images/story-scene.svg" alt="Three alien kids crash-landing in a backyard" class="illus-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Friendship Section ────────────────────────────────────────────────── -->
+  <section id="friendship" class="section friendship-section">
+    <div class="parallax-bg section-blob section-blob--friendship" data-parallax="0.25" aria-hidden="true"></div>
+    <div class="container">
+      <div class="two-col two-col--text-right">
+
+        <div class="two-col__illustration">
+          <div class="illus-frame illus-frame--tilt-left">
+            <img src="images/friendship-scene.svg" alt="Maya and the alien kids in her treehouse" class="illus-img">
+          </div>
+        </div>
+
+        <div class="two-col__text">
+          <span class="section-label">Friendship &amp; Wonder</span>
+          <h2>The Treehouse<br>at the Edge<br>of Everything</h2>
+          <p class="lead">Maya's treehouse becomes their home base — a place where four very different beings discover they have more in common than they ever expected.</p>
+          <p>Zib is fascinated by water (it does not exist on their planet). Mara learns to love music — sound, she says, is like colour for ears. And tiny Pip, the youngest, just wants to stay forever.</p>
+          <p>Through star maps and mud pies, through laughter and a few tears, these four friends will show each other what it means to truly belong somewhere.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Chapter Cards ─────────────────────────────────────────────────────── -->
+  <section id="chapters" class="section chapters-section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">The Journey</span>
+        <h2>Four Chapters,<br>One Adventure</h2>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="chapter-card">
+          <div class="chapter-card__visual">
+            <img src="images/chapter-1.svg" alt="The Crash — aliens tumbling from a busted ship">
+            <span class="chapter-card__num">01</span>
+          </div>
+          <div class="chapter-card__body">
+            <h3>The Crash</h3>
+            <p>A shortcut gone very, very wrong. Three aliens, one busted ship, and a backyard full of surprises.</p>
+          </div>
+        </article>
+
+        <article class="chapter-card">
+          <div class="chapter-card__visual">
+            <img src="images/chapter-2.svg" alt="The Treehouse — Maya welcoming aliens into her hideout">
+            <span class="chapter-card__num">02</span>
+          </div>
+          <div class="chapter-card__body">
+            <h3>The Treehouse</h3>
+            <p>Maya has one rule: no grown-ups in the treehouse. Aliens, apparently, are fine.</p>
+          </div>
+        </article>
+
+        <article class="chapter-card">
+          <div class="chapter-card__visual">
+            <img src="images/chapter-3.svg" alt="Earth Lessons — aliens discovering ice cream and rain">
+            <span class="chapter-card__num">03</span>
+          </div>
+          <div class="chapter-card__body">
+            <h3>Earth Lessons</h3>
+            <p>Ice cream, rain puddles, and the concept of "night-time". Earth is very, very strange.</p>
+          </div>
+        </article>
+
+        <article class="chapter-card">
+          <div class="chapter-card__visual">
+            <img src="images/chapter-4.svg" alt="Finding Home — the friends saying goodbye under the stars">
+            <span class="chapter-card__num">04</span>
+          </div>
+          <div class="chapter-card__body">
+            <h3>Finding Home</h3>
+            <p>The stars are calling. But leaving means saying goodbye — and goodbye is the hardest word in any language.</p>
+          </div>
+        </article>
+
+      </div><!-- /cards-grid -->
+    </div>
+  </section>
+
+  <!-- ─── About Konstantina ─────────────────────────────────────────────────── -->
+  <section id="about" class="section about-section">
+    <div class="parallax-bg section-blob section-blob--about" data-parallax="0.2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="two-col two-col--text-right about-layout">
+
+        <div class="two-col__illustration about-portrait-wrap">
+          <div class="portrait-frame">
+            <img src="images/konstantina-portrait.svg" alt="Konstantina, children's book illustrator" class="portrait-img">
+          </div>
+          <div class="portrait-ring" aria-hidden="true"></div>
+        </div>
+
+        <div class="two-col__text">
+          <span class="section-label">The Illustrator</span>
+          <h2>Meet<br>Konstantina</h2>
+          <p class="lead">Konstantina is a children's book illustrator with a love for whimsical worlds, unexpected friendships, and stories that speak softly to both children and the adults who read alongside them.</p>
+          <p>Her signature watercolour-on-paper style brings a warm, handmade quality to every page — textures you almost want to touch, colours that feel like a memory of something beautiful.</p>
+          <p><em>Lost Among Stars</em> is her debut picture book, born from a childhood fascination with space and the question: what if someone very different showed up and needed your help?</p>
+          <div class="about-links">
+            <a href="mailto:hello@konstantina.art" class="btn btn--outline">hello@konstantina.art</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact / Bologna Book Fair ──────────────────────────────────────── -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="bologna-badge" aria-hidden="true">
+          <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="70" cy="70" r="63" fill="#8a5aaa" opacity="0.08"/>
+            <circle cx="70" cy="70" r="63" fill="none" stroke="#8a5aaa" stroke-width="1.5" stroke-dasharray="5 3.5" opacity="0.5"/>
+            <circle cx="70" cy="70" r="53" fill="none" stroke="#5a8a6a" stroke-width="0.75" opacity="0.35"/>
+            <text x="70" y="54" text-anchor="middle" font-family="Lora,serif" font-size="11" font-weight="600" fill="#8a5aaa">Bologna</text>
+            <text x="70" y="70" text-anchor="middle" font-family="Lora,serif" font-size="10" fill="#8a5aaa">Children's</text>
+            <text x="70" y="85" text-anchor="middle" font-family="Lora,serif" font-size="10" fill="#8a5aaa">Book Fair</text>
+            <text x="70" y="100" text-anchor="middle" font-family="Nunito,sans-serif" font-size="9" fill="#5a8a6a" font-weight="700" letter-spacing="2">2025</text>
+          </svg>
+        </div>
+
+        <div class="contact-text">
+          <span class="section-label">Let's Talk</span>
+          <h2>Available for<br>Collaboration</h2>
+          <p class="lead">Attending the Bologna Children's Book Fair? Konstantina would love to connect with publishers, agents, and fellow creators who believe in the magic of illustrated stories.</p>
+          <p>Whether you are interested in <em>Lost Among Stars</em> or a future project, do not hesitate to reach out.</p>
+          <div class="contact-actions">
+            <a href="mailto:hello@konstantina.art" class="btn btn--primary">Send a Message</a>
+            <a href="#" class="btn btn--ghost">Download Portfolio PDF</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 Konstantina &mdash; Illustrated with love and too much watercolour.</p>
+    </footer>
+
+  </section>
+
+  <script src="js/parallax.js"></script>
+</body>
+</html>

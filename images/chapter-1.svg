@@ -1,0 +1,47 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="w1"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3"/></filter>
+    <radialGradient id="s1" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3a2d4a"/>
+      <stop offset="100%" stop-color="#1a1228"/>
+    </radialGradient>
+  </defs>
+  <!-- Night sky -->
+  <rect width="400" height="300" fill="url(#s1)"/>
+  <!-- Stars -->
+  <circle cx="40"  cy="30"  r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="90"  cy="55"  r="1"   fill="white" opacity="0.6"/>
+  <circle cx="160" cy="25"  r="2"   fill="white" opacity="0.9"/>
+  <circle cx="230" cy="45"  r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="310" cy="20"  r="1"   fill="white" opacity="0.8"/>
+  <circle cx="370" cy="60"  r="2"   fill="white" opacity="0.6"/>
+  <circle cx="60"  cy="90"  r="1"   fill="white" opacity="0.5"/>
+  <circle cx="340" cy="80"  r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="200" cy="70"  r="1"   fill="white" opacity="0.6"/>
+  <!-- Planet/moon in bg -->
+  <circle cx="330" cy="55" r="28" fill="#c4a0e0" opacity="0.4" filter="url(#w1)"/>
+  <circle cx="330" cy="55" r="28" fill="none" stroke="#ede0f7" stroke-width="1" opacity="0.3"/>
+  <!-- Crash streak -->
+  <line x1="330" y1="60" x2="200" y2="180" stroke="#ffa060" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="330" y1="60" x2="200" y2="180" stroke="#ffd090" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+  <!-- Ship tumbling -->
+  <g transform="translate(200, 175) rotate(35)" filter="url(#w1)">
+    <ellipse cx="0" cy="0" rx="40" ry="17" fill="#b084d8" opacity="0.95"/>
+    <ellipse cx="0" cy="-9" rx="22" ry="12" fill="#c4a0e0" opacity="0.9"/>
+    <circle cx="0" cy="-7" r="6" fill="#ede0f7" opacity="0.8"/>
+  </g>
+  <!-- Ground horizon -->
+  <rect x="0" y="240" width="400" height="70" fill="#dff0e7" opacity="0.15"/>
+  <ellipse cx="200" cy="250" rx="250" ry="35" fill="#5a8a6a" opacity="0.2" filter="url(#w1)"/>
+  <!-- Tiny alien silhouettes flying out -->
+  <circle cx="170" cy="155" r="8" fill="#ede0f7" opacity="0.8"/>
+  <circle cx="225" cy="145" r="7" fill="#ede0f7" opacity="0.7"/>
+  <circle cx="248" cy="162" r="5" fill="#ede0f7" opacity="0.75"/>
+  <!-- Spark particles -->
+  <circle cx="210" cy="190" r="3" fill="#ffa060" opacity="0.6"/>
+  <circle cx="190" cy="200" r="2" fill="#ffcc80" opacity="0.5"/>
+  <circle cx="230" cy="195" r="2.5" fill="#ffa060" opacity="0.55"/>
+  <!-- Label -->
+  <rect x="0" y="265" width="400" height="35" fill="#3a2d4a" opacity="0.6"/>
+  <text x="200" y="287" text-anchor="middle" font-size="13" fill="#ede0f7" font-family="Georgia,serif" font-style="italic">01 — The Crash</text>
+</svg>
