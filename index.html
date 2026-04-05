@@ -6,7 +6,7 @@
   <title>Konstantina — Lost Among Stars</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Englebert&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -59,13 +59,13 @@
         <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" class="planet-svg">
           <defs>
             <radialGradient id="pg" cx="38%" cy="33%" r="65%">
-              <stop offset="0%"   stop-color="#ede0f7"/>
-              <stop offset="55%"  stop-color="#b084d8"/>
-              <stop offset="100%" stop-color="#7040a0"/>
+              <stop offset="0%"   stop-color="#f5d0f3"/>
+              <stop offset="55%"  stop-color="#9E5098"/>
+              <stop offset="100%" stop-color="#5C2558"/>
             </radialGradient>
             <radialGradient id="cg" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#9060b8" stop-opacity="0.6"/>
-              <stop offset="100%" stop-color="#9060b8" stop-opacity="0"/>
+              <stop offset="0%" stop-color="#7A3A79" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#7A3A79" stop-opacity="0"/>
             </radialGradient>
             <filter id="blur3">
               <feGaussianBlur stdDeviation="3"/>
@@ -75,7 +75,7 @@
             </filter>
           </defs>
           <!-- Ring shadow -->
-          <ellipse cx="180" cy="205" rx="158" ry="26" fill="#7040a0" opacity="0.18" filter="url(#blur6)"/>
+          <ellipse cx="180" cy="205" rx="158" ry="26" fill="#5C2558" opacity="0.18" filter="url(#blur6)"/>
           <!-- Planet body -->
           <circle cx="180" cy="175" r="108" fill="url(#pg)"/>
           <!-- Surface texture blobs -->
@@ -86,59 +86,62 @@
           <ellipse cx="143" cy="138" rx="38" ry="24" fill="white" opacity="0.22" transform="rotate(-25 143 138)"/>
           <ellipse cx="152" cy="133" rx="16" ry="10" fill="white" opacity="0.18" transform="rotate(-25 152 133)"/>
           <!-- Ring back -->
-          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#c4a0e0" stroke-width="18" opacity="0.35"/>
+          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#C07ABE" stroke-width="18" opacity="0.35"/>
           <!-- Planet front clip (rings go behind) -->
           <circle cx="180" cy="175" r="108" fill="url(#pg)"/>
           <!-- Surface details redrawn on top -->
           <ellipse cx="143" cy="138" rx="38" ry="24" fill="white" opacity="0.18" transform="rotate(-25 143 138)"/>
           <!-- Ring front -->
-          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#8a5aaa" stroke-width="10" opacity="0.55"/>
-          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#ede0f7" stroke-width="3" opacity="0.3"/>
-          <!-- Small moons -->
-          <circle cx="60" cy="90" r="14" fill="#a0c4b0" opacity="0.85"/>
-          <ellipse cx="60" cy="85" rx="8" ry="5" fill="white" opacity="0.2" transform="rotate(-20 60 85)"/>
-          <circle cx="310" cy="250" r="9" fill="#c4a0e0" opacity="0.8"/>
+          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#7A3A79" stroke-width="10" opacity="0.55"/>
+          <ellipse cx="180" cy="175" rx="158" ry="30" fill="none" stroke="#FFE7FB" stroke-width="3" opacity="0.4"/>
+          <!-- Small moons — chartreuse accent -->
+          <circle cx="60" cy="90" r="14" fill="#CBFD21" opacity="0.9"/>
+          <ellipse cx="60" cy="85" rx="8" ry="5" fill="white" opacity="0.25" transform="rotate(-20 60 85)"/>
+          <circle cx="310" cy="250" r="9" fill="#CBFD21" opacity="0.75"/>
         </svg>
       </div>
 
       <!-- Decorative tiny aliens -->
       <div class="hero__floaters" aria-hidden="true">
+        <!-- Zib — Velvet Purple -->
         <div class="floater floater--zib">
           <svg viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="30" cy="45" rx="18" ry="24" fill="#8a5aaa" opacity="0.9"/>
-            <circle cx="30" cy="22" r="16" fill="#a070cc"/>
-            <circle cx="23" cy="20" r="4" fill="#ede0f7"/>
-            <circle cx="37" cy="20" r="4" fill="#ede0f7"/>
-            <circle cx="23" cy="20" r="2" fill="#3a2d4a"/>
-            <circle cx="37" cy="20" r="2" fill="#3a2d4a"/>
-            <line x1="22" y1="9" x2="20" y2="3" stroke="#8a5aaa" stroke-width="2" stroke-linecap="round"/>
-            <line x1="38" y1="9" x2="40" y2="3" stroke="#8a5aaa" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="20" cy="3" r="2.5" fill="#c4a0e0"/>
-            <circle cx="40" cy="3" r="2.5" fill="#c4a0e0"/>
+            <ellipse cx="30" cy="45" rx="18" ry="24" fill="#7A3A79" opacity="0.95"/>
+            <circle cx="30" cy="22" r="16" fill="#9E5098"/>
+            <circle cx="23" cy="20" r="4" fill="#FFE7FB"/>
+            <circle cx="37" cy="20" r="4" fill="#FFE7FB"/>
+            <circle cx="23" cy="20" r="2" fill="#281D29"/>
+            <circle cx="37" cy="20" r="2" fill="#281D29"/>
+            <line x1="22" y1="9" x2="20" y2="3" stroke="#7A3A79" stroke-width="2" stroke-linecap="round"/>
+            <line x1="38" y1="9" x2="40" y2="3" stroke="#7A3A79" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="3" r="2.5" fill="#CBFD21"/>
+            <circle cx="40" cy="3" r="2.5" fill="#CBFD21"/>
           </svg>
         </div>
+        <!-- Mara — Chartreuse -->
         <div class="floater floater--mara">
           <svg viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="30" cy="48" rx="16" ry="20" fill="#5a8a6a" opacity="0.9"/>
-            <circle cx="30" cy="24" r="17" fill="#70aa80"/>
-            <ellipse cx="22" cy="22" r="5" rx="4" ry="5" fill="#ede0f7"/>
-            <ellipse cx="38" cy="22" r="5" rx="4" ry="5" fill="#ede0f7"/>
-            <circle cx="22" cy="23" r="2.5" fill="#3a2d4a"/>
-            <circle cx="38" cy="23" r="2.5" fill="#3a2d4a"/>
-            <path d="M25 32 Q30 36 35 32" stroke="#3a2d4a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-            <ellipse cx="30" cy="10" rx="12" ry="6" fill="#5a8a6a" opacity="0.7"/>
+            <ellipse cx="30" cy="48" rx="16" ry="20" fill="#CBFD21" opacity="0.95"/>
+            <circle cx="30" cy="24" r="17" fill="#deff70"/>
+            <ellipse cx="22" cy="22" r="5" rx="4" ry="5" fill="#FFE7FB"/>
+            <ellipse cx="38" cy="22" r="5" rx="4" ry="5" fill="#FFE7FB"/>
+            <circle cx="22" cy="23" r="2.5" fill="#281D29"/>
+            <circle cx="38" cy="23" r="2.5" fill="#281D29"/>
+            <path d="M25 32 Q30 36 35 32" stroke="#281D29" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <ellipse cx="30" cy="10" rx="12" ry="6" fill="#9E5098" opacity="0.8"/>
           </svg>
         </div>
+        <!-- Pip — Soft Lavender -->
         <div class="floater floater--pip">
           <svg viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="24" cy="38" rx="13" ry="16" fill="#c4a0e0" opacity="0.9"/>
-            <circle cx="24" cy="20" r="14" fill="#d8b8f0"/>
-            <circle cx="18" cy="18" r="3.5" fill="#ede0f7"/>
-            <circle cx="30" cy="18" r="3.5" fill="#ede0f7"/>
-            <circle cx="18" cy="18" r="2" fill="#3a2d4a"/>
-            <circle cx="30" cy="18" r="2" fill="#3a2d4a"/>
-            <line x1="24" y1="7" x2="24" y2="2" stroke="#c4a0e0" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="24" cy="1.5" r="2" fill="#8a5aaa"/>
+            <ellipse cx="24" cy="38" rx="13" ry="16" fill="#f5d0f3" opacity="0.95"/>
+            <circle cx="24" cy="20" r="14" fill="#FFE7FB"/>
+            <circle cx="18" cy="18" r="3.5" fill="#ffffff"/>
+            <circle cx="30" cy="18" r="3.5" fill="#ffffff"/>
+            <circle cx="18" cy="18" r="2" fill="#281D29"/>
+            <circle cx="30" cy="18" r="2" fill="#281D29"/>
+            <line x1="24" y1="7" x2="24" y2="2" stroke="#C07ABE" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="24" cy="1.5" r="2" fill="#CBFD21"/>
           </svg>
         </div>
       </div>
