@@ -1,0 +1,62 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="w5"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="4"/></filter>
+    <radialGradient id="space5" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="#5C2558"/>
+      <stop offset="100%" stop-color="#281D29"/>
+    </radialGradient>
+  </defs>
+  <!-- Deep space background -->
+  <rect width="400" height="300" fill="url(#space5)"/>
+  <!-- Stars scattered -->
+  <circle cx="30"  cy="25"  r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="75"  cy="55"  r="1"   fill="white" opacity="0.7"/>
+  <circle cx="130" cy="18"  r="2"   fill="#CBFD21" opacity="0.8"/>
+  <circle cx="190" cy="40"  r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="250" cy="22"  r="1"   fill="white" opacity="0.7"/>
+  <circle cx="320" cy="45"  r="1.5" fill="#CBFD21" opacity="0.8"/>
+  <circle cx="375" cy="18"  r="1"   fill="white" opacity="0.6"/>
+  <circle cx="55"  cy="90"  r="1"   fill="white" opacity="0.6"/>
+  <circle cx="370" cy="80"  r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="100" cy="110" r="1"   fill="#CBFD21" opacity="0.7"/>
+  <circle cx="290" cy="75"  r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="210" cy="95"  r="1"   fill="white" opacity="0.5"/>
+  <!-- Earth small in the distance -->
+  <circle cx="340" cy="220" r="32" fill="#7A3A79" opacity="0.6" filter="url(#w5)"/>
+  <ellipse cx="340" cy="220" rx="32" ry="12" fill="#CBFD21" opacity="0.12" transform="rotate(-20 340 220)"/>
+  <ellipse cx="328" cy="212" rx="14" ry="8" fill="#9E5098" opacity="0.4" filter="url(#w5)"/>
+  <!-- Connection beam between aliens and earth -->
+  <line x1="120" y1="145" x2="310" y2="215" stroke="#CBFD21" stroke-width="1.5" stroke-dasharray="6 5" opacity="0.45"/>
+  <!-- Space bike with aliens zooming away -->
+  <g transform="translate(80, 145) rotate(-12)">
+    <!-- Bike body -->
+    <ellipse cx="0" cy="0" rx="45" ry="18" fill="#7A3A79" opacity="0.92"/>
+    <ellipse cx="0" cy="-9" rx="24" ry="14" fill="#9E5098" opacity="0.88"/>
+    <!-- Window -->
+    <circle cx="0" cy="-7" r="8" fill="#FFE7FB" opacity="0.85"/>
+    <circle cx="0" cy="-7" r="5" fill="white" opacity="0.5"/>
+    <!-- Wheels/pods -->
+    <ellipse cx="-30" cy="12" rx="8" ry="5" fill="#CBFD21" opacity="0.8"/>
+    <ellipse cx="30" cy="12" rx="8" ry="5" fill="#CBFD21" opacity="0.8"/>
+    <!-- Engine trail -->
+    <ellipse cx="55" cy="2" rx="20" ry="7" fill="#CBFD21" opacity="0.35" filter="url(#w5)"/>
+    <ellipse cx="70" cy="2" rx="12" ry="4" fill="#CBFD21" opacity="0.2" filter="url(#w5)"/>
+    <!-- Alien silhouettes in window -->
+    <circle cx="-4" cy="-8" r="4" fill="#7A3A79" opacity="0.8"/>
+    <circle cx="4"  cy="-8" r="3.5" fill="#CBFD21" opacity="0.8"/>
+  </g>
+  <!-- Floating hearts / connection symbols -->
+  <text x="165" y="128" font-size="14" fill="#CBFD21" opacity="0.6">♡</text>
+  <text x="210" y="118" font-size="10" fill="#C07ABE" opacity="0.5">♡</text>
+  <text x="240" y="130" font-size="8"  fill="#CBFD21" opacity="0.4">♡</text>
+  <!-- Maya waving from treehouse on Earth side (tiny) -->
+  <circle cx="328" cy="204" r="4" fill="#FFE7FB" opacity="0.7"/>
+  <line x1="328" y1="208" x2="328" y2="220" stroke="#FFE7FB" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="328" y1="212" x2="335" y2="207" stroke="#FFE7FB" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Stars near ship trail -->
+  <circle cx="175" cy="165" r="2.5" fill="#CBFD21" opacity="0.7"/>
+  <circle cx="145" cy="180" r="1.5" fill="white" opacity="0.6"/>
+  <!-- Label -->
+  <rect x="0" y="265" width="400" height="35" fill="#281D29" opacity="0.75"/>
+  <text x="200" y="287" text-anchor="middle" font-size="13" fill="#CBFD21" font-family="Georgia,serif" font-style="italic">05 — Always Connected</text>
+</svg>
