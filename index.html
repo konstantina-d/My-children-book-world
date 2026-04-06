@@ -236,12 +236,28 @@
 
         <div class="two-col__text">
           <span class="section-label">The Illustrator</span>
-          <h2>Meet<br>Konstantina</h2>
-          <p class="lead">Konstantina is a children's book illustrator with a love for whimsical worlds, unexpected friendships, and stories that speak softly to both children and the adults who read alongside them.</p>
-          <p>Her signature watercolour-on-paper style brings a warm, handmade quality to every page — textures you almost want to touch, colours that feel like a memory of something beautiful.</p>
-          <p><em>Lost Among Stars</em> is her debut picture book, born from a childhood fascination with space and the question: what if someone very different showed up and needed your help?</p>
-          <div class="about-links">
-            <a href="mailto:hello@konstantina.art" class="btn btn--outline">hello@konstantina.art</a>
+          <h2>Hi, I'm Konstantina!</h2>
+          <p class="lead">An illustrator, artist, and designer with a deep love for storytelling, world-building, and all things fantasy.</p>
+          <p>Every creation holds a piece of my soul, wishing to spread smiles, beauty, and warmth.</p>
+          <p><em>Lost Among Stars</em> is my debut picture book. Born from my love of spirituality, fiction, and adventure — this is a story I've loved telling my friends, their kids, and now, the world's kids.</p>
+          <p>I live and work in Athens, Greece, and I'd love to connect with people from anywhere on this planet — or beyond, even&thinsp;🌟</p>
+
+          <div class="about-social">
+            <a href="https://www.instagram.com/konstantina.makes.art" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+              </svg>
+              <span>konstantina.makes.art</span>
+            </a>
+            <a href="#" class="social-link js-email" data-u="di.diamantopoulou" data-d="gmail.com" aria-label="Send email">
+              <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <polyline points="2,4 12,13 22,4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+              <span class="js-email-label">✉ get in touch</span>
+            </a>
           </div>
         </div>
 
@@ -287,5 +303,14 @@
   </section>
 
   <script src="js/parallax.js"></script>
+  <script>
+    // Assemble email client-side to deter address scrapers
+    document.querySelectorAll('.js-email').forEach(function(el) {
+      var addr = el.dataset.u + '@' + el.dataset.d;
+      el.href = 'mailto:' + addr;
+      var label = el.querySelector('.js-email-label');
+      if (label) label.textContent = addr;
+    });
+  </script>
 </body>
 </html>
