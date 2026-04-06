@@ -638,17 +638,12 @@ em  { font-style: italic; color: var(--purple); }
 .portrait-frame {
   position: relative;
   z-index: 1;
-  border-radius: 50% 44% 52% 48% / 48% 52% 44% 50%;
-  overflow: hidden;
-  box-shadow: 0 12px 50px rgba(122, 58, 121, 0.16);
-  background: linear-gradient(135deg, var(--purple-pale) 0%, var(--green-pale) 100%);
   max-width: 380px;
 }
 
 .portrait-img {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
