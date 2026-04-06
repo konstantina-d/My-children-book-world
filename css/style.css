@@ -712,9 +712,8 @@ em  { font-style: italic; color: var(--purple); }
   margin: 0 auto;
 }
 
-.bologna-badge svg {
+.contact-ami {
   width: 180px;
-  height: 180px;
   animation: float 8s ease-in-out infinite;
   filter: drop-shadow(0 8px 24px rgba(122, 58, 121, 0.15));
 }
