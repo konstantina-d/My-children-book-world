@@ -502,6 +502,49 @@ em  { font-style: italic; color: var(--purple); }
 .story-section      { background: var(--white); }
 .friendship-section { background: var(--cream); }
 
+/* ── The Long Way Round ─────────────────────────────────────────────────────── */
+.theme-section {
+  background: var(--text-dark);
+}
+
+.section-blob--theme {
+  width: 600px;
+  height: 500px;
+  background: radial-gradient(ellipse, #7A3A79 0%, transparent 65%);
+  top: -80px;
+  left: -120px;
+  opacity: 0.25;
+}
+
+.theme-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.theme-section .section-label {
+  color: var(--green);
+}
+
+.theme-section h2 {
+  color: var(--white);
+  margin: 0.5rem 0 2rem;
+}
+
+.theme-section p {
+  color: rgba(255, 231, 251, 0.75);
+}
+
+.theme-section p.lead {
+  color: var(--cream);
+  font-size: 1.2rem;
+}
+
+.theme-section em {
+  color: var(--green);
+  font-style: italic;
+}
+
 /* ═════════════════════════════════════════════════════════════════════════════
    CHAPTER CARDS
    ═════════════════════════════════════════════════════════════════════════════ */
