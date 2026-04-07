@@ -252,6 +252,7 @@ em  { font-style: italic; color: var(--purple); }
   transition: color var(--transition);
 }
 .nav__logo:hover { color: var(--text-dark); }
+.nav__logo em { font-style: italic; color: var(--purple-mid); }
 
 .nav__links {
   display: flex;
